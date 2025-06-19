@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor1: #1a3636;
+    --cor2: #40534c;
+    --cor3: #677D6A;
+    --cor4: #d6bd98;
+    --fonteprincipal: "Montserrat Alternates", sans-serif;
+    --fontesecundaria: "Montserrat", sans-serif;
+}
+
+/*Pode usar preto e branco também*/
+
+/*Header*/
+
+nav{
+    background-color: var(--cor1);
+    font-family: var(--fonteprincipal);
+    font-weight: 500;
+}
+
+.itemdanav{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.itemdanav:hover{
+    color: var(--cor3);
+}
+
+.logo{
+    width: 170px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+#btnlogin{
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+#btncadastro{
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+#btnlogin:hover{
+    color: var(--cor1);
+    background-color: #fff;
+}
+
+#btncadastro:hover{
+    color: var(--cor1);
+    background-color: #fff;
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--cor1);
+}
+
+.iconefooter{
+    color: #fff;
+}
+
+#logofooter{
+    color: #fff;
+}
+
+.iconefooter:hover{
+    color: var(--cor3);
+}
+
+#logofooter:hover{
+    color: var(--cor3);
+}
+
+.itemdofooter{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-family: var(--fonteprincipal);
+}
+
+.itemdofooter:hover{
+    color: var(--cor3);
+}
+
+.textocopyright{
+    font-family: var(--fontesecundaria);
+    color: #fff;
+}
+
+#logofooter{
+    width: 20px;
+    height: 20px;
+}
