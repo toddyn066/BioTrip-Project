@@ -118,14 +118,6 @@ footer{
 
 /*Sobre e Termos de Uso*/
 
-.fontepincipal{
-    font-family: var(--fonteprincipal);
-}
-
-.fontesecundaria{
-    font-family: var(--fontesecundaria);
-}
-
 .cor1{
     color: var(--cor1);
 }
