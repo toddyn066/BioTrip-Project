@@ -1,11 +1,4 @@
-:root{
-    --cor1: #1a3636;
-    --cor2: #40534c;
-    --cor3: #677D6A;
-    --cor4: #d6bd98;
-}
 
-/*Pode usar preto e branco também*/
 
 #carouselExampleSlidesOnly{
     height: 50vh;
