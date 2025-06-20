@@ -1,0 +1,118 @@
+/*sectioncarrossel*/
+
+.imgcarrossel {
+    display: block;
+    width: 100%;
+    height: 36rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../img/paisagens/fernandodenoronha.jpg);
+}
+
+.gradiente {
+    position: relative;
+    width: 100%;
+    height: 36rem;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.divtextogradiente {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1gradiente {
+    font-family: var(--fonteprincipal);
+    font-size: 3.6rem;
+    color: var(--cor4);
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.75);
+}
+
+#btnconhecer {
+    padding: 5px 15px;
+    background-color: var(--cor1);
+    border-radius: 20px;
+    border: 2px solid var(--cor4);
+    color: #fff;
+    font-family: var(--fontesecundaria);
+    font-size: 1.2rem;
+    margin-top: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+#btnconhecer:hover {
+    color: var(--cor1);
+    background-color: #fff;
+}
+
+/*section2*/
+
+.section2 {
+    background-color: #fff;
+    padding: 30px 0px 20px 0px;
+}
+
+.section2 h2 {
+    font-family: var(--fonteprincipal);
+    font-size: 2rem;
+    color: var(--cor1);
+}
+
+#btndescobrir {
+    background-color: var(--cor1);
+    color: #fff;
+    font-family: var(--fontesecundaria);
+}
+
+#btndescobrir:hover {
+    background-color: transparent;
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+}
+
+.card-title {
+    font-family: var(--fonteprincipal);
+}
+
+.card-text {
+    font-family: var(--fontesecundaria);
+}
+
+/*section3*/
+
+.section3{
+    background-color: var(--cor1);
+}
+
+.section3 h2 {
+    font-family: var(--fonteprincipal);
+    color: var(--cor4);
+    padding-top: 1rem;
+}
+
+.section3 h3{
+    font-family: var(--fonteprincipal);
+    color: var(--cor4);
+}
+
+.section3 p{
+    font-family: var(--fontesecundaria);
+    color: #fff;
+}
+
+.feature-icon{
+    background-color: var(--cor2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.iconeobjetivo{
+    color: #fff;
+}
