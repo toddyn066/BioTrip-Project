@@ -34,3 +34,10 @@
             filter: drop-shadow(0 0 0.75rem var(--cor4));
         }
 }
+
+.bg-1{
+    background-color: #fff;
+}
+.bg-2{
+    background-color: var(--cor4);
+}
