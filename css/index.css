@@ -6,6 +6,7 @@
     height: 36rem;
 }
 
+
 .divtexto {
     position: absolute;
     top: 50%;
@@ -44,7 +45,8 @@
 /*section2*/
 
 .section2 {
-    background-color: #fff;
+   background: #1a3636;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 95%, rgba(202, 202, 202, 1) 100%);
     padding: 30px 0px 20px 0px;
 }
 
@@ -74,9 +76,16 @@
     font-family: var(--fontesecundaria);
 }
 
+.card {
+    -webkit-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    -moz-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    border: 1px solid var(--cor4);
+}
+
 /*section3*/
 
-.section3{
+.section3 {
     background-color: var(--cor1);
 }
 
@@ -86,27 +95,32 @@
     padding-top: 1rem;
 }
 
-.section3 h3{
+.section3 h3 {
     font-family: var(--fonteprincipal);
     color: var(--cor4);
 }
 
-.section3 p{
+.section3 p {
     font-family: var(--fontesecundaria);
     color: #fff;
 }
 
-.feature-icon{
+.feature-icon {
     background-color: var(--cor2);
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-.iconeobjetivo{
+.iconeobjetivo {
     color: #fff;
 }
 
 /*section4*/
+
+.section4{
+    background: #1a3636;
+    background: linear-gradient(360deg, rgba(245, 245, 245, 0) 95%, rgba(202, 202, 202, 1) 100%);
+}
 
 .section4 h2 {
     font-family: var(--fonteprincipal);
@@ -144,9 +158,9 @@
     color: var(--cor4);
 }
 
-@media (width <= 425){
+@media (width <=425) {
 
-    #h1gradiente{
+    #h1gradiente {
         font-size: 1.2rem;
     }
 }
