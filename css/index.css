@@ -9,15 +9,7 @@
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../img/paisagens/fernandodenoronha.jpg);
 }
 
-.gradiente {
-    position: relative;
-    width: 100%;
-    height: 36rem;
-    background: #000000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-.divtextogradiente {
+.divtexto {
     position: absolute;
     top: 50%;
     left: 50%;
