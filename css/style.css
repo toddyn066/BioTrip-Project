@@ -11,8 +11,20 @@
 
 /*Pode usar preto e branco também*/
 
-/*Header*/
+body{
+    scroll-behavior: smooth;
+    margin-top: 66px;
+}
 
+/*Header*/
+header{
+    padding-bottom: 70px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 nav{
     background-color: var(--cor1);
     font-family: var(--fonteprincipal);
