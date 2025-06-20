@@ -1,0 +1,23 @@
+#div1 {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+    font-family: var(--fonteprincipal);
+}
+
+#section2{
+    padding-bottom: 5rem;
+}
+
+.divaccordion {
+    margin-bottom: 1rem;
+}
+
+.accordion-button{
+    font-family: var(--fonteprincipal);
+    font-size: 1.1rem;
+}
+
+.accordion-body{
+    font-family: var(--fontesecundaria);
+}
