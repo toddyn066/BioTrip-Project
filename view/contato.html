@@ -36,7 +36,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="viagem_nacional.html">Viagens Nacionais</a></li>
-                                <li><a class="dropdown-item" href="viagem_internacional.html">Viagens Internacionais</a></li>
+                                <li><a class="dropdown-item" href="viagem_internacional.html">Viagens Internacionais</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -44,8 +45,10 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button id="btnlogin" type="button">Login</button>
-                        <button id="btncadastro" type="button">Cadastro</button>
+                        <button id="btnlogin" type="button" data-bs-toggle="modal"
+                            data-bs-target="#ModalLogin">Login</button>
+                        <button id="btncadastro" type="button" data-bs-toggle="modal"
+                            data-bs-target="#ModalCadastro">Cadastro</button>
                     </form>
                 </div>
             </div>
@@ -112,6 +115,68 @@
         </div>
     </footer>
 
+    <!------------Modais------------>
+
+    <!--Modal Cadastro-->
+    <div class="modal fade" id="ModalCadastro" tabindex="-1" aria-labelledby="exampleModalCadastro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalCadastro">Faça seu Cadastro!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="py-3">
+                        <label>Nome</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pb-3">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="pb-3">
+                        <label>Senha</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="pb-3">
+                        <label>Confirmar Senha</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Login-->
+
+    <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLogin">Faça seu Login!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="py-3">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="pb-3">
+                        <label>Senha</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
