@@ -3,7 +3,7 @@ let sobre = document.querySelector('#sobre');
 function dinamicSobre() {
     sobre.innerHTML = ''
     for (let i = 0; i < noticias.length; i++) {
-        if (i == 0) {
+        if (i == 0 || i == noticias.length - 1) {
             sobre.innerHTML += `
                 <div class="col-12 mb-3">
                     <h2>${noticias[i].titulo}</h2>

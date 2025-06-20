@@ -56,14 +56,10 @@ nav{
     transition: 0.2s ease-in-out;
 }
 
-#btnlogin:hover{
+#btnlogin:hover, #btncadastro:hover{
     color: var(--cor1);
-    background-color: #fff;
-}
-
-#btncadastro:hover{
-    color: var(--cor1);
-    background-color: #fff;
+    background-color: var(--cor4);
+    border-color: var(--cor4);
 }
 
 /*Footer*/
@@ -72,19 +68,11 @@ footer{
     background-color: var(--cor1);
 }
 
-.iconefooter{
+.iconefooter, #logofooter{
     color: #fff;
 }
 
-#logofooter{
-    color: #fff;
-}
-
-.iconefooter:hover{
-    color: var(--cor3);
-}
-
-#logofooter:hover{
+.iconefooter:hover, #logofooter:hover{
     color: var(--cor3);
 }
 
