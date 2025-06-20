@@ -4,20 +4,10 @@
     display: block;
     width: 100%;
     height: 36rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../img/paisagens/fernandodenoronha.jpg);
 }
 
-.gradiente {
-    position: relative;
-    width: 100%;
-    height: 36rem;
-    background: #000000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
 
-.divtextogradiente {
+.divtexto {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +45,8 @@
 /*section2*/
 
 .section2 {
-    background-color: #fff;
+   background: #1a3636;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 95%, rgba(202, 202, 202, 1) 100%);
     padding: 30px 0px 20px 0px;
 }
 
@@ -85,9 +76,16 @@
     font-family: var(--fontesecundaria);
 }
 
+.card {
+    -webkit-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    -moz-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    border: 1px solid var(--cor4);
+}
+
 /*section3*/
 
-.section3{
+.section3 {
     background-color: var(--cor1);
 }
 
@@ -97,22 +95,72 @@
     padding-top: 1rem;
 }
 
-.section3 h3{
+.section3 h3 {
     font-family: var(--fonteprincipal);
     color: var(--cor4);
 }
 
-.section3 p{
+.section3 p {
     font-family: var(--fontesecundaria);
     color: #fff;
 }
 
-.feature-icon{
+.feature-icon {
     background-color: var(--cor2);
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-.iconeobjetivo{
+.iconeobjetivo {
     color: #fff;
+}
+
+/*section4*/
+
+.section4{
+    background: #1a3636;
+    background: linear-gradient(360deg, rgba(245, 245, 245, 0) 95%, rgba(202, 202, 202, 1) 100%);
+}
+
+.section4 h2 {
+    font-family: var(--fonteprincipal);
+    font-size: 2rem;
+    color: var(--cor1);
+}
+
+.opinionbody {
+    width: auto;
+    height: auto;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    border: 2px solid var(--cor4);
+    padding: 1.5rem;
+    -webkit-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    -moz-box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+    box-shadow: 5px 13px 30px 0px rgba(171, 171, 171, 1);
+}
+
+.opinionbody img {
+    border-radius: 50%;
+    border: 2px solid var(--cor4);
+    height: 4rem;
+    width: 4rem;
+}
+
+.opinionbody span {
+    font-family: var(--fonteprincipal);
+    color: var(--cor4);
+    font-size: 1.1rem;
+}
+
+.opinionbody p {
+    font-family: var(--fontesecundaria);
+    color: var(--cor4);
+}
+
+@media (width <=425) {
+
+    #h1gradiente {
+        font-size: 1.2rem;
+    }
 }
