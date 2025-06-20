@@ -178,10 +178,3 @@
     font-family: var(--fontesecundaria);
     color: var(--cor4);
 }
-
-@media (width <=425) {
-
-    #h1gradiente {
-        font-size: 1.2rem;
-    }
-}
