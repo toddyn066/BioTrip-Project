@@ -18,7 +18,7 @@ function dinamicViagemNac() {
                         </div>
                     </div>
             `;
-        } else {
+        } else if (i % 2) {
             article.innerHTML += `
                     <div class="container">
                         <div class="row justify-content-evenly py-5">
@@ -33,12 +33,17 @@ function dinamicViagemNac() {
                         </div>
                     </div>
             `;
-        }
+            if (i === 9) {
+                article.style.borderBottom = "none";
+            }
+        } 
 
-        if (Math.floor(i / 2) % 2 === 0) {
+        if (Math.floor(i / 2) % 3 === 0) {
             article.classList.add("bg-1");
-        } else {
+        } else if (Math.floor(i / 3) % 3 === 1) {
             article.classList.add("bg-2");
+        } else {
+            article.classList.add("bg-3");
         }
 
         viagemNac.appendChild(article);

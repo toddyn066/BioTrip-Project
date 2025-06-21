@@ -35,9 +35,27 @@
         }
 }
 
+.bg-1, .bg-3{
+   border-bottom: 1px dashed #363636;
+}
+
 .bg-1{
-    background-color: #fff;
+    background-color: var(--cor4);
+    & p{
+        filter: drop-shadow(0 0 0.25rem rgba(74, 74, 74, 0.922));
+    }
 }
 .bg-2{
-    background-color: var(--cor4);
+    background-color: var(--cor3);
+    border-bottom: 1px dashed #9e9d9d;
+    color: #fff ;
+        & p{
+            filter: drop-shadow(0 0 0.75rem #fff7);
+        }
+    }
+    .bg-3{
+        background-color: #fff;
+        & p{
+            filter: drop-shadow(0 0 0.25rem rgba(74, 74, 74, 0.922));
+        }
 }
