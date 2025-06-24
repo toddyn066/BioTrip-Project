@@ -11,7 +11,7 @@ function dinamicIndex(){
         index_cards.innerHTML += `
             <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card">
-                    <img src="${catalogoFilmesSeries[i].imagem} alt="...">
+                    <img src="${catalogoFilmesSeries[i].imagem} alt="${catalogoFilmesSeries[i].sinopse}">
                     <div class="card-body">
                         <h5 class="card-title">${catalogoFilmesSeries[i].titulo}</h5>
                         <p class="card-text">${catalogoFilmesSeries[i].sinopse}</p>
@@ -36,7 +36,7 @@ function dinamicIndex(){
             <div class="col-lg-4 col-12 mb-2">
                 <div class="opinionbody">
                     <div class="d-flex gap-4 align-items-center">
-                        <figure><img src="img/profile/profile${i+1}.jpg" alt=""></figure>
+                        <figure><img src="img/profile/profile${i+1}.jpg" alt="${galeriaFotos[i].equipamento}"></figure>
                         <div class="d-flex flex-column">
                             <span>${frasesMotivacionais[i].autor}</span>
                             <div class="text-warning">
