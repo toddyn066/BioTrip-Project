@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --cor1: #1a3636;
     --cor2: #40534c;
     --cor3: #677D6A;
@@ -11,20 +11,30 @@
 
 /*Pode usar preto e branco também*/
 
-body{
+body {
     scroll-behavior: smooth;
     margin-top: 66px;
 }
 
-h1, h2, h3, h4, h5, h6,  label{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
     font-family: var(--fonteprincipal);
 }
-p, span, a, input{
+
+p,
+span,
+a,
+input {
     font-family: var(--fontesecundaria);
 }
 
 /*Header*/
-header{
+header {
     padding-bottom: 70px;
     position: fixed;
     z-index: 1000;
@@ -32,29 +42,30 @@ header{
     top: 0;
     left: 0;
 }
-header nav{
+
+header nav {
     background-color: var(--cor1);
     font-family: var(--fonteprincipal);
     font-weight: 500;
 }
 
-.itemdanav{
+.itemdanav {
     color: #fff;
     text-decoration: none;
     margin-right: 1rem;
 }
 
-.itemdanav:hover{
+.itemdanav:hover {
     color: var(--cor3);
 }
 
-.logo{
+.logo {
     width: 170px;
     height: 50px;
     margin-right: 1rem;
 }
 
-#btnlogin{
+#btnlogin {
     background-color: transparent;
     border-radius: 5px;
     font-size: 1rem;
@@ -65,7 +76,7 @@ header nav{
     transition: 0.2s ease-in-out;
 }
 
-#btncadastro{
+#btncadastro {
     background-color: transparent;
     border-radius: 5px;
     font-size: 1rem;
@@ -75,7 +86,8 @@ header nav{
     transition: 0.2s ease-in-out;
 }
 
-#btnlogin:hover, #btncadastro:hover{
+#btnlogin:hover,
+#btncadastro:hover {
     color: var(--cor1);
     background-color: var(--cor4);
     border-color: var(--cor4);
@@ -83,52 +95,65 @@ header nav{
 
 /*Footer*/
 
-footer{
+footer {
     background-color: var(--cor1);
 }
 
-.iconefooter, #logofooter{
+#divfinalfooter {
+    justify-content: space-between;
+}
+
+.iconefooter,
+#logofooter {
     color: #fff;
 }
 
-.iconefooter:hover, #logofooter:hover{
+.iconefooter:hover,
+#logofooter:hover {
     color: var(--cor3);
 }
 
-.itemdofooter{
+.itemdofooter {
     color: #fff;
     text-decoration: none;
     margin-right: 1rem;
     font-family: var(--fonteprincipal);
 }
 
-.itemdofooter:hover{
+.itemdofooter:hover {
     color: var(--cor3);
 }
 
-.textocopyright{
+.textocopyright {
     font-family: var(--fontesecundaria);
     color: #fff;
 }
 
-#logofooter{
+#logofooter {
     width: 20px;
     height: 20px;
 }
 
+@media screen and (max-width: 425px) {
+    #divfinalfooter {
+        justify-content: center;
+    }
+}
+
 /*Sobre e Termos de Uso*/
 
-.cor1{
+.cor1 {
     color: var(--cor1);
 }
 
 /*Modais*/
 
-.modal-footer > button{
+.modal-footer>button {
     font-family: var(--fontesecundaria);
 }
 
-#alert-login, #alert-cadastro{
+#alert-login,
+#alert-cadastro {
     font-family: var(--fontesecundaria);
     background-color: var(--cor4);
     opacity: 0.9;
