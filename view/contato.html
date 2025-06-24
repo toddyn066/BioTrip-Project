@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -56,34 +55,36 @@
     </header>
 
     <main>
-        <div id="div1">
-            <h1>Entre em contato</h1>
-        </div>
-        <section id="section2">
-            <div id="divformulario">
-                <div class="row">
+        <h1 class="text-center py-5" style="color: var(--cor1);">Entre em contato</h1>
+        <section class="d-flex justify-content-center align-items-center pb-4 mb-4 container">
+            <div class="row justify-content-center">
+                <form class="row rounded-4 justify-content-center col-12 col-md-10 p-5" id="divformulario">
                     <div class="col-12 pb-2">
-                        <label for="formGroupExampleInput">Nome Completo</label>
-                        <input type="text" class="form-control borda" id="formGroupExampleInput">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control border border-secondary-subtle" id="nome" required>
                     </div>
                     <div class="col-12 pb-2">
-                        <label for="formGroupExampleInput">E-mail</label>
-                        <input type="email" class="form-control borda" id="formGroupExampleInput">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control border border-secondary-subtle" id="email" required>
                     </div>
                     <div class="col-12 pb-2">
-                        <label for="formGroupExampleInput">Assunto</label>
-                        <input type="text" class="form-control borda" id="formGroupExampleInput">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" class="form-control border border-secondary-subtle" id="assunto" required>
                     </div>
                     <div class="col-12 pb-4">
-                        <label for="formGroupExampleInput">Mensagem</label>
-                        <input type="text" class="form-control borda" id="formGroupExampleInput">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control border border-secondary-subtle" id="mensagem" required></textarea>
                     </div>
-                    <div>
-                        <button id="enviar">Enviar</button>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" id="enviar">Enviar</button>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
+        <!-- Alert Do Formulário -->
+        <div class="alert" id="alert" role="alert">
+            Mensagem enviada com sucesso!
+        </div>
     </main>
 
     <footer>
@@ -107,8 +108,9 @@
                                     class="bi bi-instagram"></i></a></li>
                         <li class="ms-3"><a class="iconefooter" href="https://x.com/"><i
                                     class="bi bi-twitter-x"></i></a></li>
-                        <li class="ms-3"><a class="iconefooter" href="https://youtube.com/@rd3w31?si=HnwHZrtLQs1BIy46"><i
-                                    class="bi bi-youtube"></i></a></li>
+                        <li class="ms-3"><a class="iconefooter"
+                                href="https://youtube.com/@rd3w31?si=HnwHZrtLQs1BIy46"><i class="bi bi-youtube"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -120,7 +122,7 @@
     <!--Modal Cadastro-->
     <div class="modal fade" id="ModalCadastro" tabindex="-1" aria-labelledby="exampleModalCadastro" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_cadastro">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalCadastro">Faça seu Cadastro!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -128,34 +130,38 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>Nome</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Confirmar Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-cadastro">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Cadastro -->
+    <div class="alert" id="alert-cadastro" role="alert">
+        Cadastro realizado com sucesso!
     </div>
 
     <!--Modal Login-->
 
     <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_login">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLogin">Faça seu Login!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -163,25 +169,31 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-login">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Login -->
+    <div class="alert" id="alert-login" role="alert">
+        Logado com sucesso!
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="../js/contato.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

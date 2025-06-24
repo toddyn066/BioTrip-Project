@@ -61,6 +61,7 @@
             </div>
         </div>
         <div class="row mt-5" id="sobre">
+            <!-- Conteúdo colocado dinamicamente -->
         </div>
     </main>
 
@@ -101,7 +102,7 @@
     <!--Modal Cadastro-->
     <div class="modal fade" id="ModalCadastro" tabindex="-1" aria-labelledby="exampleModalCadastro" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_cadastro">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalCadastro">Faça seu Cadastro!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -109,34 +110,38 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>Nome</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Confirmar Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-cadastro">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Cadastro -->
+    <div class="alert" id="alert-cadastro" role="alert">
+        Cadastro realizado com sucesso!
     </div>
 
     <!--Modal Login-->
 
     <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_login">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLogin">Faça seu Login!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -144,19 +149,23 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-login">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Login -->
+    <div class="alert" id="alert-login" role="alert">
+        Logado com sucesso!
     </div>
 
 
@@ -165,6 +174,7 @@
         crossorigin="anonymous"></script>
     <script src="../db/dados.js"></script>
     <script src="../js/sobre.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -127,3 +127,14 @@ footer{
 .modal-footer > button{
     font-family: var(--fontesecundaria);
 }
+
+#alert-login, #alert-cadastro{
+    font-family: var(--fontesecundaria);
+    background-color: var(--cor4);
+    opacity: 0.9;
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}

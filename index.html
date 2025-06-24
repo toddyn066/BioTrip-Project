@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="img/logo/logosozinho.svg" type="image/x-icon">
-    <meta name="description" content="Já pensou em viajar com a maior agência de viagens de ecoturismo do Brasil? Então vem pra TravEco!">
+    <meta name="description"
+        content="Já pensou em viajar com a maior agência de viagens de ecoturismo do Brasil? Então vem pra TravEco!">
     <meta property="og:title" content="TravEco">
-    <meta property="og:description" content="Já pensou em viajar com a maior agência de viagens de ecoturismo do Brasil? Então vem pra TravEco!">
+    <meta property="og:description"
+        content="Já pensou em viajar com a maior agência de viagens de ecoturismo do Brasil? Então vem pra TravEco!">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
 </head>
@@ -79,7 +81,8 @@
                     <div class="container">
                         <h1 id="h1gradiente" class="text-center display-3">Venha desbravar o mundo de forma sustentável!
                         </h1>
-                        <button id="btnconhecer" type="button"><a href="view/sobre.html" class="text-decoration-none linkdivtexto">Quero conhecer!</a></button>
+                        <button id="btnconhecer" type="button"><a href="view/sobre.html"
+                                class="text-decoration-none linkdivtexto">Quero conhecer!</a></button>
                     </div>
                 </section>
             </div>
@@ -107,49 +110,7 @@
             <div class="container py-4">
                 <h2 class="border-bottom mt-2">Opinião dos Clientes</h2>
                 <div class="row py-4" id="index_opinioes">
-                    
-                    <div class="col-lg-4 col-121 mb-2">
-                        <div class="opinionbody">
-                            <div class="d-flex gap-4 align-items-center">
-                                <figure><img src="img/profile/profile2.jpg" alt=""></figure>
-                                <div class="d-flex flex-column">
-                                    <span>Roberto Santos</span>
-                                    <div class="text-warning">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Vou sempre indicar a TravEco para meus familiares, me impressionou muito o
-                                    atendimento.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="opinionbody">
-                            <div class="d-flex gap-4 align-items-center">
-                                <figure><img src="img/profile/profile3.jpg" alt=""></figure>
-                                <div class="d-flex flex-column">
-                                    <span>Patrícia Martins</span>
-                                    <div class="text-warning">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Melhor viagem que fiz na minha vida! Segue sendo a melhor agência de viagens de
-                                    ecoturismo.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Aqui vão as opiniões dos clientes colocadas dinamicamente -->
                 </div>
             </div>
         </section>
@@ -177,8 +138,9 @@
                                     class="bi bi-instagram"></i></a></li>
                         <li class="ms-3"><a class="iconefooter" href="https://x.com/"><i
                                     class="bi bi-twitter-x"></i></a></li>
-                        <li class="ms-3"><a class="iconefooter" href="https://youtube.com/@rd3w31?si=HnwHZrtLQs1BIy46"><i
-                                    class="bi bi-youtube"></i></a></li>
+                        <li class="ms-3"><a class="iconefooter"
+                                href="https://youtube.com/@rd3w31?si=HnwHZrtLQs1BIy46"><i class="bi bi-youtube"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -190,7 +152,7 @@
     <!--Modal Cadastro-->
     <div class="modal fade" id="ModalCadastro" tabindex="-1" aria-labelledby="exampleModalCadastro" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_cadastro">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalCadastro">Faça seu Cadastro!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -198,34 +160,38 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>Nome</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Confirmar Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-cadastro">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Cadastro -->
+    <div class="alert" id="alert-cadastro" role="alert">
+        Cadastro realizado com sucesso!
     </div>
 
     <!--Modal Login-->
 
     <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
-            <div class="modal-content">
+            <form class="modal-content" id="form_login">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLogin">Faça seu Login!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -233,19 +199,23 @@
                 <div class="modal-body">
                     <div class="py-3">
                         <label>E-mail</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required>
                     </div>
                     <div class="pb-3">
                         <label>Senha</label>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btn_cancel-login">Cancelar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
+    <!-- Alert Login -->
+    <div class="alert" id="alert-login" role="alert">
+        Logado com sucesso!
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
@@ -253,6 +223,7 @@
         crossorigin="anonymous"></script>
     <script src="./db/dados.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
