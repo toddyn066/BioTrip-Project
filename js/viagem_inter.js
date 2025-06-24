@@ -16,7 +16,7 @@ function dinamicViagemInter() {
         nav_list.innerHTML += `<a class="nav-link" href="#item${i}">${galeriaFotos[i].localizacao}</a>`;
         inter_list.innerHTML += `
             <section class="row justify-content-evenly my-5" >
-                <h4 class="col-12" id="item${i}">- ${galeriaFotos[i].localizacao}</h4>
+                <h4 class="col-12" id="item${i}">- ${galeriaFotos[i].localizacao} - R$${Math.floor(Math.random() * 10001)},00</h4>
                 <div class="text col-12">
                     <p class="fs-6">
                         &emsp;${artigos[i].paragrafo02}

@@ -11,7 +11,7 @@ function dinamicViagemNac() {
                                 <img src="${galeriaFotos[i].imagem}" class="img-fluid rounded mb-3" alt="${galeriaFotos[i].descricao}">
                             </figure>
                             <section class="col-12 col-lg-7 d-flex flex-column justify-content-center text-start">
-                                <h3 class="mb-3">${galeriaFotos[i].titulo}</h3>
+                                <h3 class="mb-3">${galeriaFotos[i].titulo} - R$${Math.floor(Math.random() * 1001)},00</h3>
                                 <h4>${galeriaFotos[i].localizacao}</h4>
                                 <p class="mt-4">${artigos[i].paragrafo01}</p>
                             </section>
@@ -24,7 +24,7 @@ function dinamicViagemNac() {
                         <div class="row justify-content-evenly py-5">
                             <section class="col-12 col-lg-7 d-flex flex-column justify-content-center text-end">
                                 <h3 class="mb-3">${galeriaFotos[i].titulo}</h3>
-                                <h4>${galeriaFotos[i].localizacao}</h4>
+                                <h4>${galeriaFotos[i].localizacao} - R$${Math.floor(Math.random() * 1001)},00</h4>
                                 <p class="mt-4">${artigos[i].paragrafo01}</p>
                             </section>
                             <figure class="col-12 col-lg-4">
