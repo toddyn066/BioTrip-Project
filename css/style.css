@@ -32,7 +32,7 @@ header{
     top: 0;
     left: 0;
 }
-nav{
+header nav{
     background-color: var(--cor1);
     font-family: var(--fonteprincipal);
     font-weight: 500;

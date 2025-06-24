@@ -8,7 +8,7 @@ function dinamicViagemNac() {
                     <div class="container">
                         <div class="row justify-content-evenly py-5">
                             <figure class="col-12 col-lg-4">
-                                <img src="${galeriaFotos[i].imagem}" class="img-fluid rounded mb-3" alt="Destino 1">
+                                <img src="${galeriaFotos[i].imagem}" class="img-fluid rounded mb-3" alt="${galeriaFotos[i].descricao}">
                             </figure>
                             <section class="col-12 col-lg-7 d-flex flex-column justify-content-center text-start">
                                 <h3 class="mb-3">${galeriaFotos[i].titulo}</h3>
@@ -28,7 +28,7 @@ function dinamicViagemNac() {
                                 <p class="mt-4">${artigos[i].paragrafo01}</p>
                             </section>
                             <figure class="col-12 col-lg-4">
-                                <img src="${galeriaFotos[i].imagem}" class="img-fluid rounded mb-3" alt="Destino 1">
+                                <img src="${galeriaFotos[i].imagem}" class="img-fluid rounded mb-3" alt="${galeriaFotos[i].descricao}">
                             </figure>
                         </div>
                     </div>

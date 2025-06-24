@@ -52,7 +52,29 @@
         </nav>
     </header>
 
-    <main>
+    <button id="btn-offcanvas" class="btn rounded-circle" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+        style="background-color: var(--cor3);">
+        <i id="hamburg-icon" class="bi bi-list"></i>
+    </button>
+
+    <aside class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ecoturismo Internacional</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="fw-bolder mb-5">Índice:</p>
+            <nav id="navbar-example3" class=" flex-column align-items-stretch rounded">
+                <nav class="nav nav-pills flex-column" id="nav-list">
+                </nav>
+            </nav>
+        </div>
+    </aside>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+        class="scrollspy-example-2" tabindex="0">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <article class="carousel-inner h-100 w-100">
                 <figure class="carousel-item active w-100 h-100" data-bs-interval="4000">
@@ -77,40 +99,24 @@
             </section>
         </div>
 
-
-
-        <button id="btn-offcanvas" class="btn rounded-circle" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
-            style="background-color: var(--cor3);">
-            <i id="hamburg-icon" class="bi bi-list"></i>
-        </button>
-
-        <aside class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ecoturismo Internacional</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <section class="py-5" style="background-color: var(--cor4);">
+            <div class="container" id="intro-text">
             </div>
-            <div class="offcanvas-body">
-                <p class="fw-bolder">Dentre os países de ecoturismo, temos:</p>
-                <nav id="navbar-example3" class=" flex-column align-items-stretch pe-4 border-end">
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link" href="#item-0">Item 1</a>
-                        <a class="nav-link" href="#item-1">Item 2</a>
-                        <a class="nav-link" href="#item-2">Item 3</a>
-                        <a class="nav-link" href="#item-3">Item 4</a>
-                        <a class="nav-link" href="#item-4">Item 5</a>
-                        <a class="nav-link" href="#item-5">Item 6</a>
-                        <a class="nav-link" href="#item-6">Item 7</a>
-                </nav>
-                </nav>
-            </div>
-        </aside>
+        </section>
+        <h3 class="container fw-semibold pt-5">Principais países do Ecoturismo:</h3>
 
+        <article class="container" id="viagem_inter-list">
+        </article>
+
+        <section class="container my-5" id="final">
+            <h3 class="fw-semibold">Alguns outros lugares:</h3>
+            <div class="final-text">
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="py-3 mt-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -208,7 +214,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="../db/dados.js"></script>
-    <script src="../js/viagem_nacional.js"></script>
+    <script src="../js/viagem_inter.js"></script>
 </body>
 
 </html>
