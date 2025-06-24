@@ -17,6 +17,14 @@
     #carouselExampleSlidesOnly{
         height: 20vh;
     }
+    #intro{
+        & h1{
+            font-size: 5vw !important;
+        }
+        & p{
+            font-size: 3vw !important;
+        }
+    }
 }
 
 #intro{

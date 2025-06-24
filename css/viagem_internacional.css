@@ -1,0 +1,68 @@
+#carouselExampleSlidesOnly{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.carrousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.851), rgba(71, 70, 70, 0.149));
+        & h1, p{
+            filter: drop-shadow(0 0 0.75rem var(--cor3));
+        }
+}
+
+#btn-offcanvas{
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    background-color: var(--cor1);
+    color: #fff;
+    border: none;
+    transition: 0.5s ease-in-out;
+        &:hover{
+            background-color: var(--cor2) !important;
+        }
+}
+
+#hamburg-icon{
+    font-size: 1.8rem;
+}
+
+#navbar-example3{
+    background-color: #fff !important;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    #carouselExampleSlidesOnly{
+        height: 20vh;
+    }
+    #intro{
+        & h1{
+            font-size: 5vw !important;
+        }
+        & p{
+            font-size: 2.5vw !important;
+        }
+    }
+    #hamburg-icon{
+        font-size: 1.5rem;
+    }
+}
