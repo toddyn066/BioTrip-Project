@@ -16,10 +16,10 @@ body{
     margin-top: 66px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6,  label{
     font-family: var(--fonteprincipal);
 }
-p, span, a, label{
+p, span, a, input{
     font-family: var(--fontesecundaria);
 }
 
@@ -120,4 +120,10 @@ footer{
 
 .cor1{
     color: var(--cor1);
+}
+
+/*Modais*/
+
+.modal-footer > button{
+    font-family: var(--fontesecundaria);
 }
