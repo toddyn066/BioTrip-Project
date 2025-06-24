@@ -24,4 +24,4 @@ O objetivo é: juntar front-end e back-end no mesmo site; usando HTML, CSS, Java
 
 ## Colaboradores do Projeto
 
-**Letícia e João Pedro**
+**Letícia Rolando e João Pedro**
