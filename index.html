@@ -88,47 +88,8 @@
         <section class="section2">
             <div class="container">
                 <h2 class="border-bottom">Viagens</h2>
-                <div class="row pt-4">
-                    <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card">
-                            <img src="img/paisagens/atacamahotel.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Array</h5>
-                                <p class="card-text">Array array array array array array array</p>
-                                <a href="#" class="btn" id="btndescobrir">Descobrir</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card">
-                            <img src="img/paisagens/atacamahotel.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Array</h5>
-                                <p class="card-text">Array array array array array array array</p>
-                                <a href="#" class="btn" id="btndescobrir">Descobrir</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card">
-                            <img src="img/paisagens/atacamahotel.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Array</h5>
-                                <p class="card-text">Array array array array array array array</p>
-                                <a href="#" class="btn" id="btndescobrir">Descobrir</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                        <div class="card">
-                            <img src="img/paisagens/atacamahotel.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Array</h5>
-                                <p class="card-text">Array array array array array array array</p>
-                                <a href="#" class="btn" id="btndescobrir">Descobrir</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row pt-4" id="index_cards">
+                    <!-- Aqui vão os cards de viagens colocados dinamicamente -->
                 </div>
             </div>
         </section>
@@ -136,32 +97,8 @@
         <section class="section3">
             <div class="container px-4 py-3" id="featured-3">
                 <h2 class="pb-2 border-bottom">Objetivo</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                            <i class="bi bi-leaf iconeobjetivo"></i>
-                        </div>
-                        <h3 class="fs-2">Sustentabilidade</h3>
-                        <p>Array array array array array array array array array array array array array array array
-                            array array array array array array array array array array</p>
-                    </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                            <i class="bi bi-backpack4 iconeobjetivo"></i>
-                        </div>
-                        <h3 class="fs-2">Educação</h3>
-                        <p>array array array array array array array array array array array array array array array
-                            array array array array array array array array array array array array</p>
-                    </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                            <i class="bi bi-shield-shaded iconeobjetivo"></i>
-                        </div>
-                        <h3 class="fs-2">Proteção</h3>
-                        <p>array array array array array array array array array array array array array array array
-                            array array array array array array array array array array array array array array array
-                        </p>
-                    </div>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" id="index_objetivos">
+                    <!-- Aqui vão os objetivos colocados dinamicamente -->
                 </div>
             </div>
         </section>
@@ -169,28 +106,8 @@
         <section class="section4">
             <div class="container py-4">
                 <h2 class="border-bottom mt-2">Opinião dos Clientes</h2>
-                <div class="row py-4">
-                    <div class="col-lg-4 col-12 mb-2">
-                        <div class="opinionbody">
-                            <div class="d-flex gap-4 align-items-center">
-                                <figure><img src="img/profile/profile1.jpg" alt=""></figure>
-                                <div class="d-flex flex-column">
-                                    <span>Aline Caxias</span>
-                                    <div class="text-warning">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Melhor experiência impossível! Me trataram muito bem, o atendimento foi impecável e
-                                    me diverti muito. Nota 10!</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row py-4" id="index_opinioes">
+                    
                     <div class="col-lg-4 col-121 mb-2">
                         <div class="opinionbody">
                             <div class="d-flex gap-4 align-items-center">
@@ -268,7 +185,6 @@
         </div>
     </footer>
 
-
     <!------------Modais------------>
 
     <!--Modal Cadastro-->
@@ -335,6 +251,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="./db/dados.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
